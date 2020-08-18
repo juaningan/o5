@@ -353,13 +353,21 @@ data InformerData =
 
 * Help Context
 ** Overview
+Application users doesn't know well the law enforcement. Neither mandatory
+markings, important markings or international radio systems for indutrial
+vessels.
+
+Opportunities to take good pictures are low because mobile device camera
+technical specs but also distance, movement, dirty hulls...
+
+-----
 El conocimiento de la legislación por los patrones o usuarios de la aplicación
 es bajo. Igualmente lo referido a los sistemas de marcado o de radio
 internacionales para flotas industriales.
 
-Las especificaciones técnicas de las cámaras de los dispositivos móviles son
-bajas, así como las oportunidades de obtener buenas tomas por distancia,
-movimientos, suciedad de las embarcaciones...
+La posibilidad de conseguir fotografías de buena calidad es baja, debido a las
+especificaciones técnicas de las cámaras de los dispositivos móviles, la
+distancia, movimientos, suciedad de las embarcaciones...
 
 *** Goals
 - Educar a los usuarios sobre qué marcas del casco o del puente son importantes
