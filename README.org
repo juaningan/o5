@@ -1,5 +1,4 @@
 * Overview
-
 #+begin_src plantuml :file components-app.png
   @startuml
   !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Component.puml
@@ -38,9 +37,15 @@
   Rel(mod, vms, "Get data")
   @enduml
 #+end_src
-
 * Report Context
 ** Overview
+High sees encounters with alleged ilegal fishing vessels (mainly Asian flag
+sheeps) are being reported by artisanal fishing fleet in Calamasur. They usually
+don’t have the tools to record these encounters properly, and there is lack of
+consensus on what information should be captured.
+
+They usually take place in non network coverage áreas and may last up to 8 days
+-----
 La flota pesquera artesanal denuncia que se producen encuentros en alta mar con
 embarcaciones sospechosas de ejercer pesca ilegal. Principalmente flota de
 bandera asiática. Carecen de herramientas específicas que les permitan registrar
@@ -317,7 +322,7 @@ movimientos, suciedad de las embarcaciones...
   fotografiar.
 - Educar sobre las trasngresiones mas habituales en las flotas ilegales.
 
-
+** data
 #+BEGIN_SRC
 data MarkingsHelp =
   Name

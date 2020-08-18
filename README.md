@@ -1,47 +1,57 @@
 
 # Table of Contents
 
-1.  [Overview](#org3cdde55)
-2.  [Report Context](#org7e9d067)
-    1.  [Overview](#org5a7e5f0)
-    2.  [data](#org1930a84)
-    3.  [workflows](#org00433c0)
-3.  [Fishing Area Context](#orgda4830a)
-    1.  [Overview](#org6d34a9f)
-        1.  [Goals](#org9d23a7c)
-    2.  [data](#org975a529)
-    3.  [workflows](#org17d6214)
-        1.  [substeps](#org4114593)
-4.  [Vessel Identification Context](#org9828b43)
-    1.  [Overview](#orgd5ee7ef)
-        1.  [Goals](#org798d796)
-    2.  [Design trade-offs](#org5525839)
-    3.  [data](#org84828d4)
-5.  [Informer Data Context](#org988d96e)
-    1.  [Overview](#orgd02870b)
-        1.  [Goals](#org66ef773)
-    2.  [data](#org1112e3d)
-6.  [Help Context](#orge32162e)
-    1.  [Overview](#org949e85e)
-        1.  [Goals](#org2e7ebbf)
-7.  [Scratch](#orgc876d40)
+1.  [Overview](#orgcf9e81f)
+2.  [Report Context](#org20af01f)
+    1.  [Overview](#orgaf4a618)
+    2.  [data](#orgcb17d5b)
+    3.  [workflows](#orgd27f9a2)
+3.  [Fishing Area Context](#org31823a7)
+    1.  [Overview](#orgb41840c)
+        1.  [Goals](#orgd83c969)
+    2.  [data](#org68a4af0)
+    3.  [workflows](#org3fe9d60)
+        1.  [substeps](#org34b242e)
+4.  [Vessel Identification Context](#orgc8a75f0)
+    1.  [Overview](#org8a51648)
+        1.  [Goals](#org38e21a4)
+    2.  [Design trade-offs](#org038eb54)
+    3.  [data](#org49de745)
+5.  [Informer Data Context](#orge8c679f)
+    1.  [Overview](#orgdb31efc)
+        1.  [Goals](#org5a00720)
+    2.  [data](#org02e5274)
+6.  [Help Context](#orga451747)
+    1.  [Overview](#org94f2c30)
+        1.  [Goals](#orgc2c0f15)
+    2.  [data](#org909c615)
+7.  [Scratch](#orgc28c001)
 
 
-<a id="org3cdde55"></a>
+<a id="orgcf9e81f"></a>
 
 # Overview
 
 ![img](components-app.png)
 
 
-<a id="org7e9d067"></a>
+<a id="org20af01f"></a>
 
 # Report Context
 
 
-<a id="org5a7e5f0"></a>
+<a id="orgaf4a618"></a>
 
 ## Overview
+
+High sees encounters with alleged ilegal fishing vessels (mainly Asian flag
+sheeps) are being reported by artisanal fishing fleet in Calamasur. They usually
+don’t have the tools to record these encounters properly, and there is lack of
+consensus on what information should be captured.
+
+They usually take place in non network coverage áreas and may last up to 8 days
+
+---
 
 La flota pesquera artesanal denuncia que se producen encuentros en alta mar con
 embarcaciones sospechosas de ejercer pesca ilegal. Principalmente flota de
@@ -53,7 +63,7 @@ Estos encuentros se producen generalmente en zonas fuera de cobertura móvil y l
 estancia en esas zonas puede durar hasta 8 días.
 
 
-<a id="org1930a84"></a>
+<a id="orgcb17d5b"></a>
 
 ## data
 
@@ -63,7 +73,7 @@ estancia en esas zonas puede durar hasta 8 días.
       AND InformerData
 
 
-<a id="org00433c0"></a>
+<a id="orgd27f9a2"></a>
 
 ## workflows
 
@@ -76,12 +86,12 @@ estancia en esas zonas puede durar hasta 8 días.
     do CheckFields
 
 
-<a id="orgda4830a"></a>
+<a id="org31823a7"></a>
 
 # Fishing Area Context
 
 
-<a id="org6d34a9f"></a>
+<a id="orgb41840c"></a>
 
 ## Overview
 
@@ -96,7 +106,7 @@ No es descartable que en futuras versiones se de soporte a estos otros problemas
 Todos los dispositivos son capaces de obtener su geolocalización.
 
 
-<a id="org9d23a7c"></a>
+<a id="orgd83c969"></a>
 
 ### Goals
 
@@ -109,7 +119,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
     sin competencias&#x2026;)
 
 
-<a id="org975a529"></a>
+<a id="org68a4af0"></a>
 
 ## data
 
@@ -142,7 +152,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
       OR ...
 
 
-<a id="org17d6214"></a>
+<a id="org3fe9d60"></a>
 
 ## workflows
 
@@ -167,7 +177,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
     return SupportedFishingAreaDetected
 
 
-<a id="org4114593"></a>
+<a id="org34b242e"></a>
 
 ### substeps
 
@@ -183,12 +193,12 @@ Todos los dispositivos son capaces de obtener su geolocalización.
       output (on error): UnsupportedFishingArea
 
 
-<a id="org9828b43"></a>
+<a id="orgc8a75f0"></a>
 
 # Vessel Identification Context
 
 
-<a id="orgd5ee7ef"></a>
+<a id="org8a51648"></a>
 
 ## Overview
 
@@ -215,7 +225,7 @@ artesanas de Calamasur en su mayoría no disponen de receptores AIS. Si disponen
 de AIS las flotas industriales de la zona.
 
 
-<a id="org798d796"></a>
+<a id="org38e21a4"></a>
 
 ### Goals
 
@@ -228,7 +238,7 @@ de AIS las flotas industriales de la zona.
 -   Llegar a conocer si el sistema AIS está apagado o enviando datos falsos (spoofing).
 
 
-<a id="org5525839"></a>
+<a id="org038eb54"></a>
 
 ## Design trade-offs
 
@@ -236,7 +246,7 @@ TODO: número de fotos permitidas
 TODO: número de vídeos
 
 
-<a id="org84828d4"></a>
+<a id="org49de745"></a>
 
 ## data
 
@@ -295,12 +305,12 @@ TODO: número de vídeos
       OR Other
 
 
-<a id="org988d96e"></a>
+<a id="orge8c679f"></a>
 
 # Informer Data Context
 
 
-<a id="orgd02870b"></a>
+<a id="orgdb31efc"></a>
 
 ## Overview
 
@@ -316,7 +326,7 @@ posición, si no también volcados raw de la información de los sistemas de
 navegación.
 
 
-<a id="org66ef773"></a>
+<a id="org5a00720"></a>
 
 ### Goals
 
@@ -327,7 +337,7 @@ navegación.
     GNSS del dispositivo móvil.
 
 
-<a id="org1112e3d"></a>
+<a id="org02e5274"></a>
 
 ## data
 
@@ -359,12 +369,12 @@ navegación.
       AND InformerDeviceLocation
 
 
-<a id="orge32162e"></a>
+<a id="orga451747"></a>
 
 # Help Context
 
 
-<a id="org949e85e"></a>
+<a id="org94f2c30"></a>
 
 ## Overview
 
@@ -377,7 +387,7 @@ bajas, así como las oportunidades de obtener buenas tomas por distancia,
 movimientos, suciedad de las embarcaciones&#x2026;
 
 
-<a id="org2e7ebbf"></a>
+<a id="orgc2c0f15"></a>
 
 ### Goals
 
@@ -387,6 +397,11 @@ movimientos, suciedad de las embarcaciones&#x2026;
 -   Informar sobre los detalles constructivos que son mas sencillos de
     fotografiar.
 -   Educar sobre las trasngresiones mas habituales en las flotas ilegales.
+
+
+<a id="org909c615"></a>
+
+## data
 
     data MarkingsHelp =
       Name
@@ -401,7 +416,7 @@ movimientos, suciedad de las embarcaciones&#x2026;
       OR Bridge
 
 
-<a id="orgc876d40"></a>
+<a id="orgc28c001"></a>
 
 # Scratch
 
