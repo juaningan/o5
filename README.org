@@ -225,6 +225,14 @@ artesanas de Calamasur en su mayoría no disponen de receptores AIS. Si disponen
 de AIS las flotas industriales de la zona.
 
 *** Goals
+- Get the most relevant information possible
+- Get alerts prior to obtaining sound and relevant information
+- Educate about the different reportable facts, other than the fishing activity.
+- Try to obtain graphic evidence, even of low quality, where details of the
+  construction of the ships are captured.
+- Get to know if the AIS system is non-operative or sending false data
+  (spoofing)
+-----
 - Obtener la información mas relevante posible
 - Obtener avisos aun sin información relevante
 - Educar sobre los diferentes hechos denunciables, mas alla de la actividad

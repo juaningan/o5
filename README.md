@@ -1,46 +1,46 @@
 
 # Table of Contents
 
-1.  [Overview](#org92d5225)
-2.  [Report Context](#orged49d35)
-    1.  [Overview](#org84c9660)
-    2.  [data](#org05fcf85)
-    3.  [workflows](#org9d9987f)
-3.  [Fishing Area Context](#orgc4dac6e)
-    1.  [Overview](#orga4dbce4)
-        1.  [Goals](#org47d5f7c)
-    2.  [data](#org00015e5)
-    3.  [workflows](#org5ebc378)
-        1.  [substeps](#org65d59a2)
-4.  [Vessel Identification Context](#org6f3c8a6)
-    1.  [Overview](#org6a2d343)
-        1.  [Goals](#org04445a6)
-    2.  [Design trade-offs](#orga449a85)
-    3.  [data](#org9f039fd)
-5.  [Informer Data Context](#org64e3a89)
-    1.  [Overview](#orgbcca503)
-        1.  [Goals](#orgad5feb5)
-    2.  [data](#org1f4f7a2)
-6.  [Help Context](#org1e06195)
-    1.  [Overview](#orgb6f614b)
-        1.  [Goals](#org0bd52ee)
-    2.  [data](#orgfb9a998)
-7.  [Scratch](#orgb304d00)
+1.  [Overview](#org6ee42bb)
+2.  [Report Context](#org1dba223)
+    1.  [Overview](#org7f55017)
+    2.  [data](#org461c534)
+    3.  [workflows](#org2a2e6ca)
+3.  [Fishing Area Context](#org85e3c3f)
+    1.  [Overview](#orgb28d16e)
+        1.  [Goals](#org853bda8)
+    2.  [data](#org2707d5f)
+    3.  [workflows](#org0495465)
+        1.  [substeps](#org5591606)
+4.  [Vessel Identification Context](#orge4bf09f)
+    1.  [Overview](#orgaad20bc)
+        1.  [Goals](#org2575655)
+    2.  [Design trade-offs](#orga8e231c)
+    3.  [data](#org6f65760)
+5.  [Informer Data Context](#orga83bcc6)
+    1.  [Overview](#org90ab2dc)
+        1.  [Goals](#org4759011)
+    2.  [data](#orgd8a093f)
+6.  [Help Context](#orge19aead)
+    1.  [Overview](#orgf08d774)
+        1.  [Goals](#org7206e5e)
+    2.  [data](#orgdffec0e)
+7.  [Scratch](#orgb1c1aee)
 
 
-<a id="org92d5225"></a>
+<a id="org6ee42bb"></a>
 
 # Overview
 
 ![img](components-app.png)
 
 
-<a id="orged49d35"></a>
+<a id="org1dba223"></a>
 
 # Report Context
 
 
-<a id="org84c9660"></a>
+<a id="org7f55017"></a>
 
 ## Overview
 
@@ -63,7 +63,7 @@ Estos encuentros se producen generalmente en zonas fuera de cobertura móvil y l
 estancia en esas zonas puede durar hasta 8 días.
 
 
-<a id="org05fcf85"></a>
+<a id="org461c534"></a>
 
 ## data
 
@@ -73,7 +73,7 @@ estancia en esas zonas puede durar hasta 8 días.
       AND InformerData
 
 
-<a id="org9d9987f"></a>
+<a id="org2a2e6ca"></a>
 
 ## workflows
 
@@ -86,12 +86,12 @@ estancia en esas zonas puede durar hasta 8 días.
     do CheckFields
 
 
-<a id="orgc4dac6e"></a>
+<a id="org85e3c3f"></a>
 
 # Fishing Area Context
 
 
-<a id="orga4dbce4"></a>
+<a id="orgb28d16e"></a>
 
 ## Overview
 
@@ -119,7 +119,7 @@ No es descartable que en futuras versiones se de soporte a estos otros problemas
 Todos los dispositivos son capaces de obtener su geolocalización.
 
 
-<a id="org47d5f7c"></a>
+<a id="org853bda8"></a>
 
 ### Goals
 
@@ -142,7 +142,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
     sin competencias&#x2026;)
 
 
-<a id="org00015e5"></a>
+<a id="org2707d5f"></a>
 
 ## data
 
@@ -175,7 +175,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
       OR ...
 
 
-<a id="org5ebc378"></a>
+<a id="org0495465"></a>
 
 ## workflows
 
@@ -200,7 +200,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
     return SupportedFishingAreaDetected
 
 
-<a id="org65d59a2"></a>
+<a id="org5591606"></a>
 
 ### substeps
 
@@ -216,12 +216,12 @@ Todos los dispositivos son capaces de obtener su geolocalización.
       output (on error): UnsupportedFishingArea
 
 
-<a id="org6f3c8a6"></a>
+<a id="orge4bf09f"></a>
 
 # Vessel Identification Context
 
 
-<a id="org6a2d343"></a>
+<a id="orgaad20bc"></a>
 
 ## Overview
 
@@ -270,9 +270,19 @@ artesanas de Calamasur en su mayoría no disponen de receptores AIS. Si disponen
 de AIS las flotas industriales de la zona.
 
 
-<a id="org04445a6"></a>
+<a id="org2575655"></a>
 
 ### Goals
+
+-   Get the most relevant information possible
+-   Get alerts prior to obtaining sound and relevant information
+-   Educate about the different reportable facts, other than the fishing activity.
+-   Try to obtain graphic evidence, even of low quality, where details of the
+    construction of the ships are captured.
+-   Get to know if the AIS system is non-operative or sending false data
+    (spoofing)
+
+---
 
 -   Obtener la información mas relevante posible
 -   Obtener avisos aun sin información relevante
@@ -283,7 +293,7 @@ de AIS las flotas industriales de la zona.
 -   Llegar a conocer si el sistema AIS está apagado o enviando datos falsos (spoofing).
 
 
-<a id="orga449a85"></a>
+<a id="orga8e231c"></a>
 
 ## Design trade-offs
 
@@ -291,7 +301,7 @@ TODO: número de fotos permitidas
 TODO: número de vídeos
 
 
-<a id="org9f039fd"></a>
+<a id="org6f65760"></a>
 
 ## data
 
@@ -350,12 +360,12 @@ TODO: número de vídeos
       OR Other
 
 
-<a id="org64e3a89"></a>
+<a id="orga83bcc6"></a>
 
 # Informer Data Context
 
 
-<a id="orgbcca503"></a>
+<a id="org90ab2dc"></a>
 
 ## Overview
 
@@ -371,7 +381,7 @@ posición, si no también volcados raw de la información de los sistemas de
 navegación.
 
 
-<a id="orgad5feb5"></a>
+<a id="org4759011"></a>
 
 ### Goals
 
@@ -382,7 +392,7 @@ navegación.
     GNSS del dispositivo móvil.
 
 
-<a id="org1f4f7a2"></a>
+<a id="orgd8a093f"></a>
 
 ## data
 
@@ -414,12 +424,12 @@ navegación.
       AND InformerDeviceLocation
 
 
-<a id="org1e06195"></a>
+<a id="orge19aead"></a>
 
 # Help Context
 
 
-<a id="orgb6f614b"></a>
+<a id="orgf08d774"></a>
 
 ## Overview
 
@@ -432,7 +442,7 @@ bajas, así como las oportunidades de obtener buenas tomas por distancia,
 movimientos, suciedad de las embarcaciones&#x2026;
 
 
-<a id="org0bd52ee"></a>
+<a id="org7206e5e"></a>
 
 ### Goals
 
@@ -444,7 +454,7 @@ movimientos, suciedad de las embarcaciones&#x2026;
 -   Educar sobre las trasngresiones mas habituales en las flotas ilegales.
 
 
-<a id="orgfb9a998"></a>
+<a id="orgdffec0e"></a>
 
 ## data
 
@@ -461,7 +471,7 @@ movimientos, suciedad de las embarcaciones&#x2026;
       OR Bridge
 
 
-<a id="orgb304d00"></a>
+<a id="orgb1c1aee"></a>
 
 # Scratch
 
