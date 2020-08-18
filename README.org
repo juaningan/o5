@@ -75,6 +75,17 @@ do CheckFields
 
 * Fishing Area Context
 ** Overview
+The project is aimed towards ​​Calamasur. The boundaries of the Exclusive Economic
+Zones (EEZ) where the greatest number of encounters take place are defined and
+accepted internationally.
+
+Other fishing areas will have problems that will be totally or subtly different
+from those of Calamasur, and for which SFP does not currently have agreements or
+powers. It may be possible that in future versions of it , these other problems
+will be taken in consideration.
+
+All devices are capable of obtaining their geolocation.
+-----
 El proyecto va dirigido al ámbito de Calamasur. Los límites de las zonas
 económicas exclusivas (EEZ) donde se producen el mayor número de encuentros
 están definidos y aceptados internacionalmente.
@@ -86,6 +97,14 @@ No es descartable que en futuras versiones se de soporte a estos otros problemas
 Todos los dispositivos son capaces de obtener su geolocalización.
 
 *** Goals
+- Improve the user experience with an interface and business rules adapted to
+  the location.
+- Verify device's location capabilities are turned on.
+- Ensure that at the beginning of the process we have a pretty accurate
+  position.
+- Minimize the number of non valid reports that will need oversight (From land,
+  areas that are not taken in consideration)
+-----
 - Mejorar la experiencia de usuario con una interfaz y reglas de negocio
   adaptadas a la localización.
 - Comprobar que las capacidades de localización del dispositivo están encendidas.
@@ -163,6 +182,26 @@ substep "CheckPosition" =
 #+END_SRC
 * Vessel Identification Context
 ** Overview
+In Calamasur, the alleged illegal fishing vessels are mainly of Asian flag.
+
+It can be particularly difficult to identify Asian ships by their names, since
+it exists a great variation in the way Chinese characters are written in Roman
+letters, therefore it is mandatory to detect any numbers visible on the hull.
+
+There is lack of consensus regarding the proximity of the encounters and if it
+is possible to capture relevant information with a mobile device. However, it
+seems unanimous that suspicious vessels are usually very dirty, show unreadable
+names and attempts to hide their features.
+
+According to FAO, attempts to hide their features are already a felony,
+regardless of the fishing activity they are carrying out same for duplicate
+features, or sailing without a flag.
+
+Suspicious vessels carry out an industrial activity, so they are obliged to
+broadcast through the AIS radio system. However, the majority of Calamasur craft
+vessels do not have AIS receivers whereas the industrial fleets in the area do
+have them.
+-----
 En Calamasur las embarcaciones sospechosas de ejercer pesca ilegal son
 principalmente de bandera asiática.
 
