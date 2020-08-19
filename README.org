@@ -39,12 +39,12 @@
 #+end_src
 * Report Context
 ** Overview
-High sees encounters with alleged ilegal fishing vessels (mainly Asian flag
-sheeps) are being reported by artisanal fishing fleet in Calamasur. They usually
-don’t have the tools to record these encounters properly, and there is lack of
-consensus on what information should be captured.
+High sees encounters with alleged ilegal fishing vessels (mainly Asian flagged
+sheeps) are being reported by artisanal fishing fleet. They usually
+don’t have the tools to record those encounters properly, and there is lack of
+agreement on what information should be registered.
 
-They usually take place in non network coverage áreas and may last up to 8 days
+The encounters usually take place in non network coverage areas, crusing up to 8 days
 -----
 La flota pesquera artesanal denuncia que se producen encuentros en alta mar con
 embarcaciones sospechosas de ejercer pesca ilegal. Principalmente flota de
@@ -52,8 +52,8 @@ bandera asiática. Carecen de herramientas específicas que les permitan registr
 estos encuentros y no existe un consenso sobre cuál es la información más
 valiosa a capturar.
 
-Estos encuentros se producen generalmente en zonas fuera de cobertura móvil y la
-estancia en esas zonas puede durar hasta 8 días.
+Los encuentros se producen en alta mar, en zonas sin cobertura móvil y la
+estancia de las travesías pueden durar hasta 8 días.
 
 ** data
 #+BEGIN_SRC
@@ -79,16 +79,12 @@ The project is aimed towards ​​Calamasur. The boundaries of the Exclusive Ec
 Zones (EEZ) where the greatest number of encounters take place are defined and
 accepted internationally.
 
-Other fishing areas will have problems that will be totally or subtly different
-from those of Calamasur, and for which SFP does not currently have agreements or
-powers. It may be possible that in future versions of it , these other problems
-will be taken in consideration.
+Other fishing areas may have totally or subtly different problems from  Calamasur ones, and for which SFP does not currently have agreements or powers. Future versions supporting those concerns should not be discarded. 
 
-All devices are capable of obtaining their geolocation.
+All devices are able to obtain their geolocation.
 -----
-El proyecto va dirigido al ámbito de Calamasur. Los límites de las zonas
-económicas exclusivas (EEZ) donde se producen el mayor número de encuentros
-están definidos y aceptados internacionalmente.
+El proyecto va dirigido al ámbito de Calamasur. El mayor número de encuentros se producen en los límites de las Zonas
+Económicas Exclusivas (EEZ), dichos límites están nítidamente definidos y aceptados internacionalmente.
 
 Otras zonas de pesca tendrán problemas que serán total o sutilmente diferentes a
 los de Calamasur, y sobre los que SFP no tiene actualmente acuerdos o competencias.
