@@ -1,55 +1,55 @@
 
 # Table of Contents
 
-1.  [Overview](#orgcbd6f47)
-2.  [Report Context](#org0779c90)
-    1.  [Overview](#orgd9d80d6)
-    2.  [data](#orgea49e53)
-    3.  [workflows](#org400bac7)
-3.  [Fishing Area Context](#org70b06b4)
-    1.  [Overview](#org1429330)
-        1.  [Goals](#org58d3f5c)
-    2.  [data](#org2125aac)
-    3.  [workflows](#org7566898)
-        1.  [substeps](#org0ed376f)
-4.  [Vessel Identification Context](#org8d42813)
-    1.  [Overview](#orge6eceb3)
-        1.  [Goals](#org8e7e605)
-    2.  [Design trade-offs](#orgd9573f6)
-    3.  [data](#orge79bdf3)
-5.  [Informer Data Context](#org1fd7bf6)
-    1.  [Overview](#orgf7bc09d)
-        1.  [Goals](#org08d2d47)
-    2.  [data](#org524ae21)
-6.  [Help Context](#org88ffd94)
-    1.  [Overview](#orgf725c7c)
-        1.  [Goals](#orgab9a9dc)
-    2.  [data](#orgb727a76)
-7.  [Scratch](#orgd97f3e2)
+1.  [Overview](#org5858f65)
+2.  [Report Context](#orgcc71e41)
+    1.  [Overview](#org1dda2ef)
+    2.  [data](#orgb06b6f6)
+    3.  [workflows](#org2b41697)
+3.  [Fishing Area Context](#org7a47e25)
+    1.  [Overview](#org3141c44)
+        1.  [Goals](#org011f4aa)
+    2.  [data](#orgceb192c)
+    3.  [workflows](#orga6e45b9)
+        1.  [substeps](#org97cbda2)
+4.  [Vessel Identification Context](#org03e5f8a)
+    1.  [Overview](#org87d9bb8)
+        1.  [Goals](#org121e3ed)
+    2.  [Design trade-offs](#org546213a)
+    3.  [data](#orgf89c213)
+5.  [Informer Data Context](#org4d43298)
+    1.  [Overview](#org9643778)
+        1.  [Goals](#orgf954c4b)
+    2.  [data](#orgdb4a5d7)
+6.  [Help Context](#org8020ebf)
+    1.  [Overview](#org4af7957)
+        1.  [Goals](#org19899f0)
+    2.  [data](#orgbea26d2)
+7.  [Scratch](#org2df3d48)
 
 
-<a id="orgcbd6f47"></a>
+<a id="org5858f65"></a>
 
 # Overview
 
 ![img](components-app.png)
 
 
-<a id="org0779c90"></a>
+<a id="orgcc71e41"></a>
 
 # Report Context
 
 
-<a id="orgd9d80d6"></a>
+<a id="org1dda2ef"></a>
 
 ## Overview
 
-High sees encounters with alleged ilegal fishing vessels (mainly Asian flag
-sheeps) are being reported by artisanal fishing fleet in Calamasur. They usually
-don’t have the tools to record these encounters properly, and there is lack of
-consensus on what information should be captured.
+High sees encounters with alleged ilegal fishing vessels (mainly Asian flagged
+sheeps) are being reported by artisanal fishing fleet. They usually
+don’t have the tools to record those encounters properly, and there is lack of
+agreement on what information should be registered.
 
-They usually take place in non network coverage áreas and may last up to 8 days
+The encounters usually take place in non network coverage areas, crusing up to 8 days
 
 ---
 
@@ -59,11 +59,11 @@ bandera asiática. Carecen de herramientas específicas que les permitan registr
 estos encuentros y no existe un consenso sobre cuál es la información más
 valiosa a capturar.
 
-Estos encuentros se producen generalmente en zonas fuera de cobertura móvil y la
-estancia en esas zonas puede durar hasta 8 días.
+Los encuentros se producen en alta mar, en zonas sin cobertura móvil y la
+estancia de las travesías pueden durar hasta 8 días.
 
 
-<a id="orgea49e53"></a>
+<a id="orgb06b6f6"></a>
 
 ## data
 
@@ -73,7 +73,7 @@ estancia en esas zonas puede durar hasta 8 días.
       AND InformerData
 
 
-<a id="org400bac7"></a>
+<a id="org2b41697"></a>
 
 ## workflows
 
@@ -86,12 +86,12 @@ estancia en esas zonas puede durar hasta 8 días.
     do CheckFields
 
 
-<a id="org70b06b4"></a>
+<a id="org7a47e25"></a>
 
 # Fishing Area Context
 
 
-<a id="org1429330"></a>
+<a id="org3141c44"></a>
 
 ## Overview
 
@@ -99,18 +99,14 @@ The project is aimed towards ​​Calamasur. The boundaries of the Exclusive Ec
 Zones (EEZ) where the greatest number of encounters take place are defined and
 accepted internationally.
 
-Other fishing areas will have problems that will be totally or subtly different
-from those of Calamasur, and for which SFP does not currently have agreements or
-powers. It may be possible that in future versions of it , these other problems
-will be taken in consideration.
+Other fishing areas may have totally or subtly different problems from  Calamasur ones, and for which SFP does not currently have agreements or powers. Future versions supporting those concerns should not be discarded. 
 
-All devices are capable of obtaining their geolocation.
+All devices are able to obtain their geolocation.
 
 ---
 
-El proyecto va dirigido al ámbito de Calamasur. Los límites de las zonas
-económicas exclusivas (EEZ) donde se producen el mayor número de encuentros
-están definidos y aceptados internacionalmente.
+El proyecto va dirigido al ámbito de Calamasur. El mayor número de encuentros se producen en los límites de las Zonas
+Económicas Exclusivas (EEZ), dichos límites están nítidamente definidos y aceptados internacionalmente.
 
 Otras zonas de pesca tendrán problemas que serán total o sutilmente diferentes a
 los de Calamasur, y sobre los que SFP no tiene actualmente acuerdos o competencias.
@@ -119,7 +115,7 @@ No es descartable que en futuras versiones se de soporte a estos otros problemas
 Todos los dispositivos son capaces de obtener su geolocalización.
 
 
-<a id="org58d3f5c"></a>
+<a id="org011f4aa"></a>
 
 ### Goals
 
@@ -142,7 +138,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
     sin competencias&#x2026;)
 
 
-<a id="org2125aac"></a>
+<a id="orgceb192c"></a>
 
 ## data
 
@@ -175,7 +171,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
       OR ...
 
 
-<a id="org7566898"></a>
+<a id="orga6e45b9"></a>
 
 ## workflows
 
@@ -200,7 +196,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
     return SupportedFishingAreaDetected
 
 
-<a id="org0ed376f"></a>
+<a id="org97cbda2"></a>
 
 ### substeps
 
@@ -216,18 +212,18 @@ Todos los dispositivos son capaces de obtener su geolocalización.
       output (on error): UnsupportedFishingArea
 
 
-<a id="org8d42813"></a>
+<a id="org03e5f8a"></a>
 
 # Vessel Identification Context
 
 
-<a id="orge6eceb3"></a>
+<a id="org87d9bb8"></a>
 
 ## Overview
 
 In Calamasur, the alleged illegal fishing vessels are mainly of Asian flag.
 
-It can be particularly difficult to identify Asian ships by their names, since
+It can be particularly difficult to identify Asian flagged ships by their names, since
 it exists a great variation in the way Chinese characters are written in Roman
 letters, therefore it is mandatory to detect any numbers visible on the hull.
 
@@ -270,7 +266,7 @@ artesanas de Calamasur en su mayoría no disponen de receptores AIS. Si disponen
 de AIS las flotas industriales de la zona.
 
 
-<a id="org8e7e605"></a>
+<a id="org121e3ed"></a>
 
 ### Goals
 
@@ -293,7 +289,7 @@ de AIS las flotas industriales de la zona.
 -   Llegar a conocer si el sistema AIS está apagado o enviando datos falsos (spoofing).
 
 
-<a id="orgd9573f6"></a>
+<a id="org546213a"></a>
 
 ## Design trade-offs
 
@@ -301,7 +297,7 @@ TODO: número de fotos permitidas
 TODO: número de vídeos
 
 
-<a id="orge79bdf3"></a>
+<a id="orgf89c213"></a>
 
 ## data
 
@@ -360,14 +356,22 @@ TODO: número de vídeos
       OR Other
 
 
-<a id="org1fd7bf6"></a>
+<a id="org4d43298"></a>
 
 # Informer Data Context
 
 
-<a id="orgf7bc09d"></a>
+<a id="org9643778"></a>
 
 ## Overview
+
+Standard user (Informer) would ususally be an artisanal fish skipper, resistant to visibilize his identity or make publicly accessible the accurate point of the encounter.
+
+Artisanal fishing fleet does not have AIS transmitors, implementing VMS system, while industrial fishing fleet they do transmit AIS publicly.
+
+Android devices can dump raw GNSS data.
+
+---
 
 El usuario o informador será generalmente un patrón de embarcación de pesca
 artesanal. Suele ser reticente a desvelar su identidad o a hacer pública la
@@ -381,9 +385,15 @@ posición, si no también volcados raw de la información de los sistemas de
 navegación.
 
 
-<a id="org08d2d47"></a>
+<a id="orgf954c4b"></a>
 
 ### Goals
+
+-   Draw as much as possible information of the moment of the encounter
+-   Truthfulness needed to validate the encounter based on AIS and/ or VMS signals
+-   Validate technical quality of GNSS signals of the devices
+
+---
 
 -   Extraer el máximo contexto posible del momento de la captura
 -   Tener la información necesaria para poder dar veracidad al encuentro
@@ -392,7 +402,7 @@ navegación.
     GNSS del dispositivo móvil.
 
 
-<a id="org524ae21"></a>
+<a id="orgdb4a5d7"></a>
 
 ## data
 
@@ -424,12 +434,12 @@ navegación.
       AND InformerDeviceLocation
 
 
-<a id="org88ffd94"></a>
+<a id="org8020ebf"></a>
 
 # Help Context
 
 
-<a id="orgf725c7c"></a>
+<a id="org4af7957"></a>
 
 ## Overview
 
@@ -451,7 +461,7 @@ especificaciones técnicas de las cámaras de los dispositivos móviles, la
 distancia, movimientos, suciedad de las embarcaciones&#x2026;
 
 
-<a id="orgab9a9dc"></a>
+<a id="org19899f0"></a>
 
 ### Goals
 
@@ -463,7 +473,7 @@ distancia, movimientos, suciedad de las embarcaciones&#x2026;
 -   Educar sobre las trasngresiones mas habituales en las flotas ilegales.
 
 
-<a id="orgb727a76"></a>
+<a id="orgbea26d2"></a>
 
 ## data
 
@@ -480,7 +490,7 @@ distancia, movimientos, suciedad de las embarcaciones&#x2026;
       OR Bridge
 
 
-<a id="orgd97f3e2"></a>
+<a id="org2df3d48"></a>
 
 # Scratch
 
