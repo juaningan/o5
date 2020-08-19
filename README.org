@@ -180,7 +180,7 @@ substep "CheckPosition" =
 ** Overview
 In Calamasur, the alleged illegal fishing vessels are mainly of Asian flag.
 
-It can be particularly difficult to identify Asian ships by their names, since
+It can be particularly difficult to identify Asian flagged ships by their names, since
 it exists a great variation in the way Chinese characters are written in Roman
 letters, therefore it is mandatory to detect any numbers visible on the hull.
 
@@ -299,9 +299,18 @@ data SuspiciousActivity =
 #+END_SRC
 * Informer Data Context
 ** Overview
+
+Standard user (Informer) would ususally be an artisanal fish skipper, resistant to visibilize his identity or make publicly accessible the accurate point of the encounter.
+
+Artisanal fishing fleet does not have AIS transmitors, implementing VMS system, while industrial fishing fleet they do transmit AIS publicly.
+
+Android devices can dump raw GNSS data.
+
+-----
 El usuario o informador será generalmente un patrón de embarcación de pesca
 artesanal. Suele ser reticente a desvelar su identidad o a hacer pública la
 posición geográfica exacta del encuentro.
+
 
 La flota artesanal carece de transmisores AIS, pero está en plena implantación
 del sistema VMS. La flota industrial si transmite AIS públicamente.
@@ -311,6 +320,10 @@ posición, si no también volcados raw de la información de los sistemas de
 navegación.
 
 *** Goals
+- Draw as much as possible information of the moment of the encounter
+- Truthfulness needed to validate the encounter based on AIS and/ or VMS signals
+- Validate technical quality of GNSS signals of the devices
+-----
 - Extraer el máximo contexto posible del momento de la captura
 - Tener la información necesaria para poder dar veracidad al encuentro
   basándonos en las señales AIS, VMS de la embarcación
