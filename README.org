@@ -1,3 +1,4 @@
+#+EXCLUDE_TAGS: ES TODO
 * Overview
 #+begin_src plantuml :file components-app.png
   @startuml
@@ -45,7 +46,7 @@ don’t have the tools to record those encounters properly, and there is lack of
 agreement on what information should be registered.
 
 The encounters usually take place in non network coverage areas, crusing up to 8 days
------
+*** Spanish                                                              :ES:
 La flota pesquera artesanal denuncia que se producen encuentros en alta mar con
 embarcaciones sospechosas de ejercer pesca ilegal. Principalmente flota de
 bandera asiática. Carecen de herramientas específicas que les permitan registrar
@@ -82,7 +83,7 @@ accepted internationally.
 Other fishing areas may have totally or subtly different problems from  Calamasur ones, and for which SFP does not currently have agreements or powers. Future versions supporting those concerns should not be discarded. 
 
 All devices are able to obtain their geolocation.
------
+*** Spanish                                                              :ES:
 El proyecto va dirigido al ámbito de Calamasur. El mayor número de encuentros se producen en los límites de las Zonas
 Económicas Exclusivas (EEZ), dichos límites están nítidamente definidos y aceptados internacionalmente.
 
@@ -92,7 +93,7 @@ No es descartable que en futuras versiones se de soporte a estos otros problemas
 
 Todos los dispositivos son capaces de obtener su geolocalización.
 
-*** Goals
+** Goals
 - Improve the user experience with an interface and business rules adapted to
   the location.
 - Verify device's location capabilities are turned on.
@@ -100,7 +101,7 @@ Todos los dispositivos son capaces de obtener su geolocalización.
   position.
 - Minimize the number of non valid reports that will need oversight (From land,
   areas that are not taken in consideration)
------
+*** Spanish                                                              :ES:
 - Mejorar la experiencia de usuario con una interfaz y reglas de negocio
   adaptadas a la localización.
 - Comprobar que las capacidades de localización del dispositivo están encendidas.
@@ -197,7 +198,7 @@ Suspicious vessels carry out an industrial activity, so they are obliged to
 broadcast through the AIS radio system. However, the majority of Calamasur craft
 vessels do not have AIS receivers whereas the industrial fleets in the area do
 have them.
------
+*** Spanish                                                              :ES:
 En Calamasur las embarcaciones sospechosas de ejercer pesca ilegal son
 principalmente de bandera asiática.
 
@@ -220,7 +221,7 @@ obligados a emitir por el sistema de radio AIS. Sin embargo las embarcaciones
 artesanas de Calamasur en su mayoría no disponen de receptores AIS. Si disponen
 de AIS las flotas industriales de la zona.
 
-*** Goals
+** Goals
 - Get the most relevant information possible
 - Get alerts prior to obtaining sound and relevant information
 - Educate about the different reportable facts, other than the fishing activity.
@@ -228,7 +229,7 @@ de AIS las flotas industriales de la zona.
   construction of the ships are captured.
 - Get to know if the AIS system is non-operative or sending false data
   (spoofing)
------
+*** Spanish                                                              :ES:
 - Obtener la información mas relevante posible
 - Obtener avisos aun sin información relevante
 - Educar sobre los diferentes hechos denunciables, mas alla de la actividad
@@ -236,7 +237,7 @@ de AIS las flotas industriales de la zona.
 - Tratar de obtener pruebas gráficas, aun de calidad baja, donde se capturen
   detalles de la construcción de los buques.
 - Llegar a conocer si el sistema AIS está apagado o enviando datos falsos (spoofing).
-** Design trade-offs
+** Design trade-offs                                                   :TODO:
 
 TODO: número de fotos permitidas
 TODO: número de vídeos
@@ -306,7 +307,7 @@ Artisanal fishing fleet does not have AIS transmitors, implementing VMS system, 
 
 Android devices can dump raw GNSS data.
 
------
+*** Spanish                                                              :ES:
 El usuario o informador será generalmente un patrón de embarcación de pesca
 artesanal. Suele ser reticente a desvelar su identidad o a hacer pública la
 posición geográfica exacta del encuentro.
@@ -319,11 +320,11 @@ Los dispositivos móviles Android que utilizan permiten obtener, no sólo la
 posición, si no también volcados raw de la información de los sistemas de
 navegación.
 
-*** Goals
+** Goals
 - Draw as much as possible information of the moment of the encounter
 - Truthfulness needed to validate the encounter based on AIS and/ or VMS signals
 - Validate technical quality of GNSS signals of the devices
------
+*** Spanish                                                              :ES:
 - Extraer el máximo contexto posible del momento de la captura
 - Tener la información necesaria para poder dar veracidad al encuentro
   basándonos en las señales AIS, VMS de la embarcación
@@ -369,7 +370,7 @@ vessels.
 Opportunities to take good pictures are low because mobile device camera
 technical specs but also distance, movement, dirty hulls...
 
------
+*** Spanish                                                              :ES:
 El conocimiento de la legislación por los patrones o usuarios de la aplicación
 es bajo. Igualmente lo referido a los sistemas de marcado o de radio
 internacionales para flotas industriales.
@@ -378,7 +379,7 @@ La posibilidad de conseguir fotografías de buena calidad es baja, debido a las
 especificaciones técnicas de las cámaras de los dispositivos móviles, la
 distancia, movimientos, suciedad de las embarcaciones...
 
-*** Goals
+** Goals                                                               :TODO:
 - Educar a los usuarios sobre qué marcas del casco o del puente son importantes
   en la identifiación de un barco.
 - Informar de la localización mas común de las marcas.
@@ -401,7 +402,7 @@ data TypicalLocation =
   OR Bridge
 #+END_SRC
 
-* Scratch
+* Scratch                                                              :TODO:
 
 Si hay una foto general del barco abre la puerta apoder incorporar fotos tomadas
 con alguna cámara externa. Si no hay niguna es imposible verificar que
