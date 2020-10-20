@@ -440,7 +440,7 @@ data AssociatedDocuments =
 #+END_SRC
 * Public Report Context
 ** data
-#+BEGINS_SRC
+#+BEGIN_SRC
 data ValidatedReport =
   ValidatedFishingVessel
   AND ValidatedSuspiciousActivity

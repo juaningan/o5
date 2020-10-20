@@ -1,52 +1,52 @@
 
 # Table of Contents
 
-1.  [Overview](#orgf5b3b35)
-2.  [Report Context](#orgab20367)
-    1.  [Overview](#org5091983)
-    2.  [data](#orgda1675c)
-    3.  [workflows](#org99f82a0)
-3.  [Fishing Area Context](#org7bde16c)
-    1.  [Overview](#org478290d)
-    2.  [Goals](#org59718cd)
-    3.  [data](#orgdcd508b)
-    4.  [workflows](#org481d4e1)
-        1.  [substeps](#orgdc44b24)
-4.  [Vessel Identification Context](#org0b792b1)
-    1.  [Overview](#org8fb33e2)
-    2.  [Goals](#orgfa03a51)
-    3.  [data](#org7e2b786)
-5.  [Informer Data Context](#org482c868)
-    1.  [Overview](#org269deec)
-    2.  [Goals](#orga8a31bc)
-    3.  [data](#org8422b4c)
-6.  [Help Context](#org5b8538b)
-    1.  [Overview](#orga4539ec)
-    2.  [data](#org68d36c6)
-7.  [Shareable Report Context](#orgd4e89ad)
-    1.  [data](#orgf115e57)
-8.  [Local authorities Report Context](#org67c8938)
-    1.  [data](#orgdcd9a1e)
-9.  [Public Report Context](#orga030660)
-    1.  [data](#org9e3fd2d)
-10. [SPRFMO Report Context](#org291746c)
-    1.  [data](#orga007ddd)
+1.  [Overview](#org763e369)
+2.  [Report Context](#org57c2d6c)
+    1.  [Overview](#org17e0de3)
+    2.  [data](#orgc38b341)
+    3.  [workflows](#orgbb42c99)
+3.  [Fishing Area Context](#orgcbf157f)
+    1.  [Overview](#orgd6ef2c7)
+    2.  [Goals](#org70dfdc8)
+    3.  [data](#org9c8b8f0)
+    4.  [workflows](#org7c18cc9)
+        1.  [substeps](#orga91ecc0)
+4.  [Vessel Identification Context](#org9eb98e4)
+    1.  [Overview](#org14194d0)
+    2.  [Goals](#org21b441f)
+    3.  [data](#org2307bce)
+5.  [Informer Data Context](#org92cc570)
+    1.  [Overview](#org5ac335e)
+    2.  [Goals](#org75b4bb4)
+    3.  [data](#orgb79c478)
+6.  [Help Context](#orgf2de306)
+    1.  [Overview](#org118bd1e)
+    2.  [data](#orga0cabe7)
+7.  [Shareable Report Context](#org6ba0e62)
+    1.  [data](#orgc5437e4)
+8.  [Local authorities Report Context](#org39b862b)
+    1.  [data](#orgf5f8156)
+9.  [Public Report Context](#orgf467d3a)
+    1.  [data](#org3d33352)
+10. [SPRFMO Report Context](#org3ffd70e)
+    1.  [data](#org7960226)
 
 
 
-<a id="orgf5b3b35"></a>
+<a id="org763e369"></a>
 
 # Overview
 
 ![img](components-app.png)
 
 
-<a id="orgab20367"></a>
+<a id="org57c2d6c"></a>
 
 # Report Context
 
 
-<a id="org5091983"></a>
+<a id="org17e0de3"></a>
 
 ## Overview
 
@@ -58,7 +58,7 @@ agreement on what information should be registered.
 The encounters usually take place in non network coverage areas, crusing up to 8 days
 
 
-<a id="orgda1675c"></a>
+<a id="orgc38b341"></a>
 
 ## data
 
@@ -68,7 +68,7 @@ The encounters usually take place in non network coverage areas, crusing up to 8
       AND InformerData
 
 
-<a id="org99f82a0"></a>
+<a id="orgbb42c99"></a>
 
 ## workflows
 
@@ -81,12 +81,12 @@ The encounters usually take place in non network coverage areas, crusing up to 8
     do CheckFields
 
 
-<a id="org7bde16c"></a>
+<a id="orgcbf157f"></a>
 
 # Fishing Area Context
 
 
-<a id="org478290d"></a>
+<a id="orgd6ef2c7"></a>
 
 ## Overview
 
@@ -99,7 +99,7 @@ Other fishing areas may have totally or subtly different problems from  Calamasu
 All devices are able to obtain their geolocation.
 
 
-<a id="org59718cd"></a>
+<a id="org70dfdc8"></a>
 
 ## Goals
 
@@ -112,7 +112,7 @@ All devices are able to obtain their geolocation.
     areas that are not taken in consideration)
 
 
-<a id="orgdcd508b"></a>
+<a id="org9c8b8f0"></a>
 
 ## data
 
@@ -145,7 +145,7 @@ All devices are able to obtain their geolocation.
       OR ...
 
 
-<a id="org481d4e1"></a>
+<a id="org7c18cc9"></a>
 
 ## workflows
 
@@ -170,7 +170,7 @@ All devices are able to obtain their geolocation.
     return SupportedFishingAreaDetected
 
 
-<a id="orgdc44b24"></a>
+<a id="orga91ecc0"></a>
 
 ### substeps
 
@@ -186,12 +186,12 @@ All devices are able to obtain their geolocation.
       output (on error): UnsupportedFishingArea
 
 
-<a id="org0b792b1"></a>
+<a id="org9eb98e4"></a>
 
 # Vessel Identification Context
 
 
-<a id="org8fb33e2"></a>
+<a id="org14194d0"></a>
 
 ## Overview
 
@@ -216,7 +216,7 @@ vessels do not have AIS receivers whereas the industrial fleets in the area do
 have them.
 
 
-<a id="orgfa03a51"></a>
+<a id="org21b441f"></a>
 
 ## Goals
 
@@ -229,7 +229,7 @@ have them.
     (spoofing)
 
 
-<a id="org7e2b786"></a>
+<a id="org2307bce"></a>
 
 ## data
 
@@ -288,12 +288,12 @@ have them.
       OR Other
 
 
-<a id="org482c868"></a>
+<a id="org92cc570"></a>
 
 # Informer Data Context
 
 
-<a id="org269deec"></a>
+<a id="org5ac335e"></a>
 
 ## Overview
 
@@ -307,7 +307,7 @@ while industrial fishing fleet they do transmit AIS publicly.
 Android devices can dump raw GNSS data.
 
 
-<a id="orga8a31bc"></a>
+<a id="org75b4bb4"></a>
 
 ## Goals
 
@@ -316,7 +316,7 @@ Android devices can dump raw GNSS data.
 -   Validate technical quality of GNSS signals of the devices
 
 
-<a id="org8422b4c"></a>
+<a id="orgb79c478"></a>
 
 ## data
 
@@ -348,12 +348,12 @@ Android devices can dump raw GNSS data.
       AND InformerDeviceLocation
 
 
-<a id="org5b8538b"></a>
+<a id="orgf2de306"></a>
 
 # Help Context
 
 
-<a id="orga4539ec"></a>
+<a id="org118bd1e"></a>
 
 ## Overview
 
@@ -365,7 +365,7 @@ Opportunities to take good pictures are low because mobile device camera
 technical specs but also distance, movement, dirty hulls&#x2026;
 
 
-<a id="org68d36c6"></a>
+<a id="orga0cabe7"></a>
 
 ## data
 
@@ -382,12 +382,12 @@ technical specs but also distance, movement, dirty hulls&#x2026;
       OR Bridge
 
 
-<a id="orgd4e89ad"></a>
+<a id="org6ba0e62"></a>
 
 # Shareable Report Context
 
 
-<a id="orgf115e57"></a>
+<a id="orgc5437e4"></a>
 
 ## data
 
@@ -409,12 +409,12 @@ technical specs but also distance, movement, dirty hulls&#x2026;
       ...
 
 
-<a id="org67c8938"></a>
+<a id="org39b862b"></a>
 
 # Local authorities Report Context
 
 
-<a id="orgdcd9a1e"></a>
+<a id="orgf5f8156"></a>
 
 ## data
 
@@ -428,29 +428,27 @@ technical specs but also distance, movement, dirty hulls&#x2026;
       OR OtherDocuments
 
 
-<a id="orga030660"></a>
+<a id="orgf467d3a"></a>
 
 # Public Report Context
 
 
-<a id="org9e3fd2d"></a>
+<a id="org3d33352"></a>
 
 ## data
 
-\#+BEGINS<sub>SRC</sub>
-data ValidatedReport =
-  ValidatedFishingVessel
-  AND ValidatedSuspiciousActivity
-  AND ValidatedInformerData
-\#+END<sub>SRC</sub>
+    data ValidatedReport =
+      ValidatedFishingVessel
+      AND ValidatedSuspiciousActivity
+      AND ValidatedInformerData
 
 
-<a id="org291746c"></a>
+<a id="org3ffd70e"></a>
 
 # SPRFMO Report Context
 
 
-<a id="orga007ddd"></a>
+<a id="org7960226"></a>
 
 ## data
 
