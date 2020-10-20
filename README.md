@@ -1,44 +1,52 @@
 
 # Table of Contents
 
-1.  [Overview](#org3937077)
-2.  [Report Context](#orgcafcdfc)
-    1.  [Overview](#orgb4326df)
-    2.  [data](#orge181158)
-    3.  [workflows](#org3694901)
-3.  [Fishing Area Context](#org34cb186)
-    1.  [Overview](#org3546577)
-    2.  [Goals](#org83276b8)
-    3.  [data](#org44979cd)
-    4.  [workflows](#org7fe64ff)
-        1.  [substeps](#org38c45ca)
-4.  [Vessel Identification Context](#org9bc23fa)
-    1.  [Overview](#orgedd9751)
-    2.  [Goals](#org49b1e49)
-    3.  [data](#org7214463)
-5.  [Informer Data Context](#org2efff73)
-    1.  [Overview](#org711eb8b)
-    2.  [Goals](#org892c964)
-    3.  [data](#orgdb03861)
-6.  [Help Context](#orgb40ca1a)
-    1.  [Overview](#orgd0da390)
-    2.  [data](#org75f2b52)
+1.  [Overview](#orgf5b3b35)
+2.  [Report Context](#orgab20367)
+    1.  [Overview](#org5091983)
+    2.  [data](#orgda1675c)
+    3.  [workflows](#org99f82a0)
+3.  [Fishing Area Context](#org7bde16c)
+    1.  [Overview](#org478290d)
+    2.  [Goals](#org59718cd)
+    3.  [data](#orgdcd508b)
+    4.  [workflows](#org481d4e1)
+        1.  [substeps](#orgdc44b24)
+4.  [Vessel Identification Context](#org0b792b1)
+    1.  [Overview](#org8fb33e2)
+    2.  [Goals](#orgfa03a51)
+    3.  [data](#org7e2b786)
+5.  [Informer Data Context](#org482c868)
+    1.  [Overview](#org269deec)
+    2.  [Goals](#orga8a31bc)
+    3.  [data](#org8422b4c)
+6.  [Help Context](#org5b8538b)
+    1.  [Overview](#orga4539ec)
+    2.  [data](#org68d36c6)
+7.  [Shareable Report Context](#orgd4e89ad)
+    1.  [data](#orgf115e57)
+8.  [Local authorities Report Context](#org67c8938)
+    1.  [data](#orgdcd9a1e)
+9.  [Public Report Context](#orga030660)
+    1.  [data](#org9e3fd2d)
+10. [SPRFMO Report Context](#org291746c)
+    1.  [data](#orga007ddd)
 
 
 
-<a id="org3937077"></a>
+<a id="orgf5b3b35"></a>
 
 # Overview
 
 ![img](components-app.png)
 
 
-<a id="orgcafcdfc"></a>
+<a id="orgab20367"></a>
 
 # Report Context
 
 
-<a id="orgb4326df"></a>
+<a id="org5091983"></a>
 
 ## Overview
 
@@ -50,7 +58,7 @@ agreement on what information should be registered.
 The encounters usually take place in non network coverage areas, crusing up to 8 days
 
 
-<a id="orge181158"></a>
+<a id="orgda1675c"></a>
 
 ## data
 
@@ -60,7 +68,7 @@ The encounters usually take place in non network coverage areas, crusing up to 8
       AND InformerData
 
 
-<a id="org3694901"></a>
+<a id="org99f82a0"></a>
 
 ## workflows
 
@@ -73,12 +81,12 @@ The encounters usually take place in non network coverage areas, crusing up to 8
     do CheckFields
 
 
-<a id="org34cb186"></a>
+<a id="org7bde16c"></a>
 
 # Fishing Area Context
 
 
-<a id="org3546577"></a>
+<a id="org478290d"></a>
 
 ## Overview
 
@@ -91,7 +99,7 @@ Other fishing areas may have totally or subtly different problems from  Calamasu
 All devices are able to obtain their geolocation.
 
 
-<a id="org83276b8"></a>
+<a id="org59718cd"></a>
 
 ## Goals
 
@@ -104,7 +112,7 @@ All devices are able to obtain their geolocation.
     areas that are not taken in consideration)
 
 
-<a id="org44979cd"></a>
+<a id="orgdcd508b"></a>
 
 ## data
 
@@ -137,7 +145,7 @@ All devices are able to obtain their geolocation.
       OR ...
 
 
-<a id="org7fe64ff"></a>
+<a id="org481d4e1"></a>
 
 ## workflows
 
@@ -162,7 +170,7 @@ All devices are able to obtain their geolocation.
     return SupportedFishingAreaDetected
 
 
-<a id="org38c45ca"></a>
+<a id="orgdc44b24"></a>
 
 ### substeps
 
@@ -178,12 +186,12 @@ All devices are able to obtain their geolocation.
       output (on error): UnsupportedFishingArea
 
 
-<a id="org9bc23fa"></a>
+<a id="org0b792b1"></a>
 
 # Vessel Identification Context
 
 
-<a id="orgedd9751"></a>
+<a id="org8fb33e2"></a>
 
 ## Overview
 
@@ -208,7 +216,7 @@ vessels do not have AIS receivers whereas the industrial fleets in the area do
 have them.
 
 
-<a id="org49b1e49"></a>
+<a id="orgfa03a51"></a>
 
 ## Goals
 
@@ -221,7 +229,7 @@ have them.
     (spoofing)
 
 
-<a id="org7214463"></a>
+<a id="org7e2b786"></a>
 
 ## data
 
@@ -280,23 +288,26 @@ have them.
       OR Other
 
 
-<a id="org2efff73"></a>
+<a id="org482c868"></a>
 
 # Informer Data Context
 
 
-<a id="org711eb8b"></a>
+<a id="org269deec"></a>
 
 ## Overview
 
-Standard user (Informer) would ususally be an artisanal fish skipper, resistant to visibilize his identity or make publicly accessible the accurate point of the encounter.
+Standard user (Informer) would ususally be an artisanal fish skipper, resistant
+to visibilize his identity or make publicly accessible the accurate point of the
+encounter.
 
-Artisanal fishing fleet does not have AIS transmitors, implementing VMS system, while industrial fishing fleet they do transmit AIS publicly.
+Artisanal fishing fleet does not have AIS transmitors, implementing VMS system,
+while industrial fishing fleet they do transmit AIS publicly.
 
 Android devices can dump raw GNSS data.
 
 
-<a id="org892c964"></a>
+<a id="orga8a31bc"></a>
 
 ## Goals
 
@@ -305,7 +316,7 @@ Android devices can dump raw GNSS data.
 -   Validate technical quality of GNSS signals of the devices
 
 
-<a id="orgdb03861"></a>
+<a id="org8422b4c"></a>
 
 ## data
 
@@ -337,12 +348,12 @@ Android devices can dump raw GNSS data.
       AND InformerDeviceLocation
 
 
-<a id="orgb40ca1a"></a>
+<a id="org5b8538b"></a>
 
 # Help Context
 
 
-<a id="orgd0da390"></a>
+<a id="orga4539ec"></a>
 
 ## Overview
 
@@ -354,7 +365,7 @@ Opportunities to take good pictures are low because mobile device camera
 technical specs but also distance, movement, dirty hulls&#x2026;
 
 
-<a id="org75f2b52"></a>
+<a id="org68d36c6"></a>
 
 ## data
 
@@ -369,4 +380,109 @@ technical specs but also distance, movement, dirty hulls&#x2026;
       Stern
       OR Side
       OR Bridge
+
+
+<a id="orgd4e89ad"></a>
+
+# Shareable Report Context
+
+
+<a id="orgf115e57"></a>
+
+## data
+
+    data ShareableReport =
+      MainPhotograph
+      AND ImpreciseLocationMap
+      AND ImpreciseHourAndDate
+      AND EEZCountryFlag
+      AND list of SuspiciousActivity
+      AND list of Badge
+    
+    data Badge =
+      PreciseGPSLocation
+      OR UserVerified
+      OR HighRiskScoreVessel
+      OR SPRFMOUnauthorizedVessel
+    
+    data SuspiciousActivity =
+      ...
+
+
+<a id="org67c8938"></a>
+
+# Local authorities Report Context
+
+
+<a id="orgdcd9a1e"></a>
+
+## data
+
+    data LocalAuthoritiesReport =
+      FactsDescription
+      AND list of AssociatedDocuments
+    
+    data AssociatedDocuments =
+      Photographs
+      OR DigitalPictureCertificates
+      OR OtherDocuments
+
+
+<a id="orga030660"></a>
+
+# Public Report Context
+
+
+<a id="org9e3fd2d"></a>
+
+## data
+
+\#+BEGINS<sub>SRC</sub>
+data ValidatedReport =
+  ValidatedFishingVessel
+  AND ValidatedSuspiciousActivity
+  AND ValidatedInformerData
+\#+END<sub>SRC</sub>
+
+
+<a id="org291746c"></a>
+
+# SPRFMO Report Context
+
+
+<a id="orga007ddd"></a>
+
+## data
+
+    data SPRFMOReportingForm =
+      DetailsOfVessel
+      AND list of ElementContravened
+      AND list of AssociatedDocuments
+      AND list of RecommendedActions
+    
+    data DetailsOfVessel =
+      Name optional
+      AND Flag optional
+      AND list of VesselIdentifier
+      AND Photographs
+      AND Position
+      AND SummaryOfAllegedIUUActivities
+      AND SummaryOfActions optional
+      AND OutcomeOfActions optional
+    
+    data VesselIdentifier =
+      CallSign
+      OR IMONumber
+      OR OtherVesselIdentifier
+    
+    data ElementContravened =
+      NotRegisteredOnSPRFMOList
+      OR FishingInClosedAreas
+      OR UseNonCompliantFishingGear
+      OR FishingWithoutNationality
+    
+    data AssociatedDocuments =
+      Photographs
+      OR DigitalPictureCertificates
+      OR AttachedDocuments
 

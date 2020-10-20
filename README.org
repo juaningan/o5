@@ -301,9 +301,12 @@ data SuspiciousActivity =
 * Informer Data Context
 ** Overview
 
-Standard user (Informer) would ususally be an artisanal fish skipper, resistant to visibilize his identity or make publicly accessible the accurate point of the encounter.
+Standard user (Informer) would ususally be an artisanal fish skipper, resistant
+to visibilize his identity or make publicly accessible the accurate point of the
+encounter.
 
-Artisanal fishing fleet does not have AIS transmitors, implementing VMS system, while industrial fishing fleet they do transmit AIS publicly.
+Artisanal fishing fleet does not have AIS transmitors, implementing VMS system,
+while industrial fishing fleet they do transmit AIS publicly.
 
 Android devices can dump raw GNSS data.
 
@@ -401,7 +404,84 @@ data TypicalLocation =
   OR Side
   OR Bridge
 #+END_SRC
+* Shareable Report Context
+** data
+#+BEGIN_SRC
+data ShareableReport =
+  MainPhotograph
+  AND ImpreciseLocationMap
+  AND ImpreciseHourAndDate
+  AND EEZCountryFlag
+  AND list of SuspiciousActivity
+  AND list of Badge
 
+data Badge =
+  PreciseGPSLocation
+  OR UserVerified
+  OR HighRiskScoreVessel
+  OR SPRFMOUnauthorizedVessel
+
+data SuspiciousActivity =
+  ...
+
+#+END_SRC
+* Local authorities Report Context
+** data
+#+BEGIN_SRC
+data LocalAuthoritiesReport =
+  FactsDescription
+  AND list of AssociatedDocuments
+
+data AssociatedDocuments =
+  Photographs
+  OR DigitalPictureCertificates
+  OR OtherDocuments
+
+#+END_SRC
+* Public Report Context
+** data
+#+BEGINS_SRC
+data ValidatedReport =
+  ValidatedFishingVessel
+  AND ValidatedSuspiciousActivity
+  AND ValidatedInformerData
+#+END_SRC
+* SPRFMO Report Context
+** data
+#+BEGIN_SRC
+data SPRFMOReportingForm =
+  DetailsOfVessel
+  AND list of ElementContravened
+  AND list of AssociatedDocuments
+  AND list of RecommendedActions
+
+data DetailsOfVessel =
+  Name optional
+  AND Flag optional
+  AND list of VesselIdentifier
+  AND Photographs
+  AND Position
+  AND SummaryOfAllegedIUUActivities
+  AND SummaryOfActions optional
+  AND OutcomeOfActions optional
+
+data VesselIdentifier =
+  CallSign
+  OR IMONumber
+  OR OtherVesselIdentifier
+
+data ElementContravened =
+  NotRegisteredOnSPRFMOList
+  OR FishingInClosedAreas
+  OR UseNonCompliantFishingGear
+  OR FishingWithoutNationality
+
+data AssociatedDocuments =
+  Photographs
+  OR DigitalPictureCertificates
+  OR AttachedDocuments
+
+#+END_SRC
 * Scratch                                                              :TODO:
 
 Si hay una foto general del barco abre la puerta apoder incorporar fotos tomadas
