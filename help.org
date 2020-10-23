@@ -1,41 +1,45 @@
 * Marcas importantes
+Los barcos pesqueros necesitan ser marcados de manera que puedan ser fácilmente identificados
+de acuerdo a estándares internacionales. El uso correcto del marcado de los barcos permite
+relacionar al barco pesquero con su identidad, según consta en los registros de buques. Esto
+permite recuperar la información operacional y/o histórica relacionada con la embarcación,
+incluyendo las autorizaciones de pesca y otras autorizaciones.
 ** Número IMO
 *** ¿Qué es?
-Es el identificador único reconocido mundialmente para los barcos pesqueros.
-Nunca es reutilizado y acompaña al barco durante toda su vida.
+Es el número que permite identificar a los navíos. Se trata de un número de identificación único para cada barco y es reconocido a escala mundial. El número IMO acompaña al barco durante toda su vida y es invariable aunque este cambie de propietario o de pabellón.
 *** ¿Cómo es?
-Es un número de 7 dígitos.
+Consiste en las tres letras 'IMO' seguidas de un número de 7 dígitos (ex: IMO 1234567)
 *** ¿Dónde está?
-En la popa o en el casco o superestructura
+Se encuentra siempre en un lugar visible, en la popa, en el casco o en la superestructura del barco.
 ** Indicativo internacional de llamada de radio (IRCS)
 *** ¿Qué es?
 Es el identificador único del equipo de radio a bordo. Aunque puede cambiar
 durante la vida útil del barco nunca estará asociado a dos barcos al mismo tiempo.
 *** ¿Cómo es?
-Una combinación de letras y números. Los dos o tres primeros caracteres
+Una combinación de letras y números, donde los dos o tres primeros caracteres
 corresponden al país. Normalmente se marcan en negro sobre fondo blanco o blanco
-sobre fondo negro. Debería ser la única marca que combine letras y números.
+sobre fondo negro Y Debería ser la única marca que combine letras y números.
 *** ¿Dónde está?
-En los lados de babor y estribor del casco del barco. También debería
+En los lados de babor y estribor del casco del barco. También deberá
 encontrarse en el resto de embarcaciones transportadas por el buque.
 
 * Actividades sospechosas
-El fallo en mantener adecuadamente el marcado de los barcos, puede ser
-simplemente un descuido. Sin embargo, pueden indicar también, que un operador
+Mantener adecuadamente las marcas identificativas es obligatorio para todos los barcos y su descuido suele acompañar a actividades ilegales, como la pesca ilegal.
+Sin embargo, pueden indicar también, que un operador
 está deliberadamente escondiendo, o confundiendo la identidad del barco pesquero
 para cometer actividades de pesca ilegal.
 
 Es importante reportar las siguientes malas prácticas para aumentar la
 vigilancia de las autoridades ante un barco de riesgo alto:
 
-- Esconder las marcas mediante artes de pesca o lonas
-- Múltiples nombres, múltiples indicativos de llamada o puertos
+- Esconder las marcas identificativas mediante lonas u artes de pesca que impiden la visualización
+- Múltiples nombres, múltiples indicativos de llamada o de puertos
 - Puerto e indicativo de llamada asociado a mas de un pabellón
-- Marcas fácilmente desmontables, como en tablas
+- Marcas fácilmente desmontables (por ejemplo, en tablas)
 - Marcas manipuladas
 
 * Toma de fotografías
-Elementos a intentar capturar en las fotografías:
+Elementos clave a intentar capturar en las fotografías:
 - Marcas de identificación en general. Especialmente IMO e Identificativo de
   llamada
 - Intentos de ocultar sus marcas
