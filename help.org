@@ -1,30 +1,39 @@
 * Marcas importantes
 ** Número IMO
 *** ¿Qué es?
-Es el número que permite identificar a los navíos. Se trata de un número de identificación único para cada barco y es reconocido a escala mundial. El número IMO acompaña al barco durante toda su vida y es invariable aunque este cambie de propietario o de pabellón.
+Es el número que permite identificar a los navíos. Se trata de un número de
+identificación único para cada barco y es reconocido a escala mundial. El número
+IMO acompaña al barco durante toda su vida y es invariable aunque este cambie de
+propietario o de pabellón.
 *** ¿Cómo es?
-Consiste en las tres letras 'IMO' seguidas de un número de 7 dígitos (ex: IMO 1234567)
+Consiste en las tres letras 'IMO' seguidas de un número de 7 dígitos (ex:
+IMO 1234567)
 *** ¿Dónde está?
-Se encuentra siempre en un lugar visible, en la popa, en el casco o en la superestructura del barco.
+Se encuentra siempre en un lugar visible, en la popa, en el casco o en la
+superestructura del barco.
 ** Indicativo internacional de llamada de radio (IRCS)
 *** ¿Qué es?
 Es el identificador único del equipo de radio a bordo. Aunque puede cambiar
-durante la vida útil del barco nunca estará asociado a dos barcos al mismo tiempo.
+durante la vida útil del barco nunca estará asociado a dos barcos al mismo
+tiempo.
 *** ¿Cómo es?
 Una combinación de letras y números, donde los dos o tres primeros caracteres
 corresponden al país. Normalmente se marcan en negro sobre fondo blanco o blanco
 sobre fondo negro y debería ser la única marca que combine letras y números.
 *** ¿Dónde está?
-En los lados de babor y estribor del casco del barco. También deberá
-encontrarse en el resto de embarcaciones transportadas por el buque.
+En los lados de babor y estribor del casco del barco. También deberá encontrarse
+en el resto de embarcaciones transportadas por el buque.
 
 * Actividades sospechosas
-Mantener adecuadamente las marcas identificativas es obligatorio para todos los barcos y su descuido suele acompañar a actividades ilegales, como la pesca ilegal.
-
 Es importante reportar las siguientes malas prácticas para aumentar la
 vigilancia de las autoridades ante un barco de riesgo alto:
 
-- Esconder las marcas identificativas mediante lonas u artes de pesca que impiden la visualización
+Mantener adecuadamente las marcas identificativas es obligatorio para todos los
+barcos y su descuido suele acompañar a actividades ilegales, como la pesca
+ilegal.
+
+- Esconder las marcas identificativas mediante lonas u artes de pesca que
+  impiden la visualización
 - Múltiples nombres, múltiples indicativos de llamada o de puertos
 - Puerto e indicativo de llamada asociado a mas de un pabellón
 - Marcas fácilmente desmontables (por ejemplo, en tablas)
