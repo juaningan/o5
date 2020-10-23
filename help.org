@@ -33,3 +33,13 @@ vigilancia de las autoridades ante un barco de riesgo alto:
 - Puerto e indicativo de llamada asociado a mas de un pabellón
 - Marcas fácilmente desmontables, como en tablas
 - Marcas manipuladas
+
+* Toma de fotografías
+Elementos a intentar capturar en las fotografías:
+- Marcas de identificación en general. Especialmente IMO e Identificativo de
+  llamada
+- Intentos de ocultar sus marcas
+- Caracteres chinos, debido a su dificil lectura
+- Aperos de pesca
+- Logotipos
+- Elementos estructurales del buque (puente, huecos en el casco...)
