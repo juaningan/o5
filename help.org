@@ -1,9 +1,4 @@
 * Marcas importantes
-Los barcos pesqueros necesitan ser marcados de manera que puedan ser fácilmente identificados
-de acuerdo a estándares internacionales. El uso correcto del marcado de los barcos permite
-relacionar al barco pesquero con su identidad, según consta en los registros de buques. Esto
-permite recuperar la información operacional y/o histórica relacionada con la embarcación,
-incluyendo las autorizaciones de pesca y otras autorizaciones.
 ** Número IMO
 *** ¿Qué es?
 Es el número que permite identificar a los navíos. Se trata de un número de identificación único para cada barco y es reconocido a escala mundial. El número IMO acompaña al barco durante toda su vida y es invariable aunque este cambie de propietario o de pabellón.
@@ -18,16 +13,13 @@ durante la vida útil del barco nunca estará asociado a dos barcos al mismo tie
 *** ¿Cómo es?
 Una combinación de letras y números, donde los dos o tres primeros caracteres
 corresponden al país. Normalmente se marcan en negro sobre fondo blanco o blanco
-sobre fondo negro Y Debería ser la única marca que combine letras y números.
+sobre fondo negro y debería ser la única marca que combine letras y números.
 *** ¿Dónde está?
 En los lados de babor y estribor del casco del barco. También deberá
 encontrarse en el resto de embarcaciones transportadas por el buque.
 
 * Actividades sospechosas
 Mantener adecuadamente las marcas identificativas es obligatorio para todos los barcos y su descuido suele acompañar a actividades ilegales, como la pesca ilegal.
-Sin embargo, pueden indicar también, que un operador
-está deliberadamente escondiendo, o confundiendo la identidad del barco pesquero
-para cometer actividades de pesca ilegal.
 
 Es importante reportar las siguientes malas prácticas para aumentar la
 vigilancia de las autoridades ante un barco de riesgo alto:
