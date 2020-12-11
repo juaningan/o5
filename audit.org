@@ -1,0 +1,50 @@
+
+Resumen de lo observado en el repositorio de la aplicación móvil tras un primer
+vistazo de 2 horas.
+
+* Uso de Git
+
+Git no se usa. Simplemente se vuelcan los cambios de los Sprints (Iterations),
+todos de golpe cada 2 meses. Perdiendo de esta forma el sentido de utilizar un
+Sistema de Control de Versiones (VCS).
+
+Al no desarrollar usando un VCS nos encontramos con prácticas del pasado como
+trozos de código comentados, copias de ficheros como backup, boilerplate que no
+se usa o ficheros de funcionalidades que se han desactivado. Todo esto dificulta
+la legibilidad del código.
+
+También funciones de debug (tipo console.log), que deberían de aparecer solamente
+en la ramas de desarrollo, ramas estas que no existen.
+
+Igualmente se pierde la trazabilidad de los cambios en el código o la
+posibilidad de agilizar el desarrollo con herramientas de integración continua
+(CI).
+
+* Testing
+
+No se usan tests. No sirve de nada hacer unos tests a posteriori preparados para
+que todos pasen sobre el código ya escrito. Eso no es TDD.
+
+* Código
+
+No se ve una separación conceptual de ningún tipo. No se sigue ningún patrón
+habitual de programación.
+
+Es curioso que se use React como libreria JavaScript cuya utilidad es separar la
+lógica de la presentación pero luego esto no se haga.
+
+React incentiva el desarrollo por componentes encapsulados, para luego componer
+varios de ellos formando una interfaz de usuario mas compleja. Pero en el código
+entregado hay ficheros de 1.000 líneas que tienen dentro varios componentes o
+incluso llamadas a la base de datos dentro de componentes.
+
+Hay "if/else" concatenados de excesivos (8) niveles que son totalmente ilegibles
+y díficiles de mantener.
+
+* Documentación
+
+No hay comentarios en el código ni documentos asociados que expliquen las
+decisiones del diseño o de las funciones.
+
+Los componentes tampoco tienen documentación individual sobre sus propiedades o
+las propiedades que admiten.
